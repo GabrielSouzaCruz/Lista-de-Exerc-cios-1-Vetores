@@ -5,20 +5,6 @@ namespace Exercicio1
 {
     class Exercicio_1
     {
-        static int somaVetor(int[] vetor)
-        {
-            int soma = 0;
-
-            for (int j = 0; j < vetor.Length; j++)
-            {
-                soma += vetor[j];
-            }
-
-            Console.WriteLine($"\nA soma dos Elementos é: {soma}");
-
-            return vetor[0];
-        }
-
         static void Main()
         {
             int n;
@@ -35,7 +21,7 @@ namespace Exercicio1
             BibliotecaArray.mostraVetor(meuVetor);
             Console.WriteLine();
 
-            somaVetor(meuVetor);
+            BibliotecaArray.somaVetor(meuVetor);
 
             Console.ReadKey();
         }
